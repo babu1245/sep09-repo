@@ -14,10 +14,10 @@ spec:
     spec:
       containers:
         - name: babuaugrepoaug24 
-          image: aug24registry.azurecr.io/babuaugrepoaug24
+          image: sep09contregis.azurecr.io/manualimage1sep10
           ports:
           - containerPort: 80
-- - -
+---
 apiVersion: v1
 kind: Service
 metadata:
@@ -28,3 +28,4 @@ spec:
     - port: 80 
     selector:
         app: babuaugrepoaug24
+
