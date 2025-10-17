@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: babuaugrepoaug24 
-          image: march11contreg.azurecr.io/march11contreg
+          image: sep09contregis.azurecr.io/sep09manualimage1
           ports:
           - containerPort: 80
 ---
@@ -29,3 +29,4 @@ spec:
     - port: 80 
     selector:
         app: babuaugrepoaug24
+
