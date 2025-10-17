@@ -4,7 +4,7 @@ kind: Deployment
 metadata:
   name: babuaugrepoaug24 
 spec:
-  replicas: 3
+  replicas: 4
   selector:
     matchLabels:
       app: babuaugrepoaug24
@@ -29,4 +29,5 @@ spec:
     - port: 80 
     selector:
         app: babuaugrepoaug24
+
 
