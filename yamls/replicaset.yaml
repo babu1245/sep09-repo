@@ -1,1 +1,17 @@
-
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: test1
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      tier: fronend1
+  template:
+    metadata:
+      labels:
+        tier: fronend1
+    spec:
+      containers:
+      - name: lb
+        image: nginx
