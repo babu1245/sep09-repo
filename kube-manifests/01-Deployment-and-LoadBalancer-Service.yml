@@ -1,4 +1,3 @@
-
 apiVersion : apps/v1
 kind: Deployment
 metadata:
@@ -15,7 +14,7 @@ spec:
     spec:
       containers:
         - name: babuaugrepoaug24 
-          image: sep09contregis.azurecr.io/sep09manualimage1
+          image: oct18registry.azurecr.io/manualimage1
           ports:
           - containerPort: 80
 ---
@@ -29,5 +28,6 @@ spec:
     - port: 80 
     selector:
         app: babuaugrepoaug24
+
 
 
